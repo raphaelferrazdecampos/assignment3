@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+    streamlit:
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+        container_name: streamlit_assigment3_group7
+        ports:
+            - "8501:8501"
+        volumes:
+            - ./app:/app
+            - ./src:/src
